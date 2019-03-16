@@ -1,2 +1,2 @@
 #!/bin/bash
-￼	echo "$*" > /dev/udp/$AT_STATS_HOST/57475
+￼echo "$*" > /dev/udp/$AT_STATS_HOST/57475
