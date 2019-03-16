@@ -352,6 +352,7 @@ end
 
 wget.callbacks.before_exit = function(exit_status, exit_status_string)
   if abortgrab == true then
+    os.execute("./stats-udp.sh flickr ABORT $item_value")
     return wget.exits.IO_FAIL
   end
   return exit_status
